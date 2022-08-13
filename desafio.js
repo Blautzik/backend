@@ -19,6 +19,9 @@ class Usuario {
     const bookNames = this.libros.map(libro => libro.nombre)
     return bookNames
   }
+  countMascotas(){
+    return this.mascotas.length
+  }
 }
 
 
@@ -32,6 +35,8 @@ console.log(usuario1.mascotas)
 
 usuario1.addMascota('toby')
 console.log(usuario1.mascotas)
+
+console.log(usuario1.countMascotas())
 
 console.log(usuario1.libros)
 usuario1.addBook('México 86. Mi mundial, Mi verdad: Asi ganamos la copa', 'Diego A. Maradona')
